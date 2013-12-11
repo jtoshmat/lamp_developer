@@ -1,0 +1,2548 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="LAMP_Developers_cheetsheet%20_files/filelist.xml">
+<link rel=Edit-Time-Data href="LAMP_Developers_cheetsheet%20_files/editdata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Toshmatov, Jon H</o:Author>
+  <o:Template>NormalEmail.dotm</o:Template>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1488</o:TotalTime>
+  <o:Created>2013-12-11T19:12:00Z</o:Created>
+  <o:Pages>1</o:Pages>
+  <o:Words>1182</o:Words>
+  <o:Characters>6738</o:Characters>
+  <o:Lines>56</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7905</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="LAMP_Developers_cheetsheet%20_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="LAMP_Developers_cheetsheet%20_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:DoNotExpandShiftReturn/>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-alt:Gulim;
+	mso-font-charset:129;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-alt:"Arial Rounded MT Bold";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:"\@Gulim";
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Gulim;
+	mso-bidi-font-family:Gulim;
+	mso-fareast-language:KO;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Gulim;
+	mso-fareast-language:KO;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.cheatsheetnote, li.cheatsheetnote, div.cheatsheetnote
+	{mso-style-name:cheat_sheet_note;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Gulim;
+	mso-fareast-language:KO;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>From:<span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Toshmatov, Jon H<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>Sent:<span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Wednesday, December 11, 2013
+2:00 PM<o:p></o:p></span></p>
+
+ 
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>Importance:<span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>High<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  page-break-inside:avoid'>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+  style='font-size:13.5pt;font-family:"Times New Roman","serif"'>MySQL Data
+  Types<o:p></o:p></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CHAR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 255)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>VARCHAR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 255)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TINYTEXT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 255)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TEXT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 65535)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BLOB<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 65535)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MEDIUMTEXT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 16777215)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MEDIUMBLOB<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 16777215)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LONGTEXT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 429496­7295)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LONGBLOB<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>String
+    (0 - 429496­7295)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TINYINT
+    x<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integer
+    (-128 to 127)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SMALLINT
+    x<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integer
+    (-32768 to 32767)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MEDIUMINT
+    x<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integer
+    (-8388608 to 8388607)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>INT
+    x<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integer
+    (-2147­483648 to 214748­3647)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BIGINT
+    x<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integer
+    (-9223­372­036­854­775808 to 922337­203­685­477­5807)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>FLOAT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Decimal
+    (precise to 23 digits)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DOUBLE<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Decimal
+    (24 to 53 digits)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DECIMAL<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&quot;­DOU­BLE­&quot;
+    stored as string<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:17'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DATE<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>YYYY-MM-DD<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:18'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DATETIME<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>YYYY-MM-DD
+    HH:MM:SS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:19'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TIMESTAMP<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>YYYYMM­DDH­HMMSS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:20'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TIME<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>HH:MM:SS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:21'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ENUM<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>One
+    of preset options<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:22;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SET<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Selection
+    of preset options<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+  style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Integers
+  (marked x) that are &quot;­UNS­IGN­ED&quot; have the same range of values but
+  start from 0 (i.e., an UNSIGNED TINYINT can have any value from 0 to 255).<o:p></o:p></span></p>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+  style='font-size:13.5pt;font-family:"Times New Roman","serif"'>MySQL Type
+  Conversion<o:p></o:p></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BINARY
+    'string'<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CAST
+    (expre­ssion AS datatype)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CONVERT
+    (expre­ssion, datatype)<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+  style='font-size:13.5pt;font-family:"Times New Roman","serif"'>MySQL Grouping
+  Functions<o:p></o:p></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>AVG<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MAX<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BIT_AND<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>STD<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BIT_OR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>STDDEV<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>COUNT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SUM<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>GROUP_­CONCAT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>VARIANCE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MIN<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width="2%" style='width:2.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+  style='font-size:13.5pt;font-family:"Times New Roman","serif"'>MySQL
+  Mathematical Functions<o:p></o:p></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ABS<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>COS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SIGN<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SIN<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MOD<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TAN<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>FLOOR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ACOS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CEILING<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ASIN<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ROUND<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ATAN,
+    ATAN2<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DIV<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>COT<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>EXP<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>RAND<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LN<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LEAST<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LOG,
+    LOG2, LOG10<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>GREATEST<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>POW<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>DEGREES<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>POWER<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>RADIANS<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SQRT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TRUNCATE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13;mso-yfti-lastrow:yes'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>PI<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+  style='font-size:13.5pt;font-family:"Times New Roman","serif"'>MySQL String
+  Functions<o:p></o:p></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ASCII<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>MID<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ORD<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SUBSTR­ING­_INDEX<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CONV<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LTRIM<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BIN,OC­T,HEX<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>RTRIM<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CHAR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>TRIM<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CONCAT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SOUNDEX<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CONCAT_WS<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SPACE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LENGTH<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>REPLACE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>CHAR_L­ENGTH<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>REPEAT<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>BIT_LENGTH<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>REVERSE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LOCATE<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>INSERT<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>INSTR<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>ELT<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LPAD<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>FIELD<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>RPAD<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LCASE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LEFT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>UCASE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>RIGHT<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>LOAD_FILE<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>SUBSTRING<o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>QUOTE<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  page-break-inside:avoid'>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <h3>PHP Array Functions<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_diff (arr1, arr2 ...)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_­filter (arr, function)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_flip (arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_­int­ersect (arr1, arr2 ...)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_­merge (arr1, arr2 ...)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_pop (arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_push (arr, var1, var2 ...)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_­reverse (arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_­search (needle, arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>array_walk (arr, function)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>count (count)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>in_array (needle, haystack)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_2_5">PHP String Functions<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>crypt (str, salt)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>explode (sep, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>implode (glue, arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>nl2br (str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>sprintf (frmt, args)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strip_tags (str, allowe­d_tags)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>str_re­place (search, replace, str)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strpos (str, needle)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strrev (str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strstr (str, needle)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strtolower (str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strtoupper (str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>substr (string, start, len)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_2_6">PHP Filesystem Functions<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>clears­tat­cache ()<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>copy (source, dest)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>fclose (handle)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>fgets (handle, len)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>file (file)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>filemtime (file)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>filesize (file)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>file_e­xists (file)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>fopen (file, mode)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>fread (handle, len)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>fwrite (handle, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>readfile (file)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_2_11">PHP Date and Time Functions<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>checkdate (month, day, year)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>date (format, timestamp)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>getdate (times­tamp)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>mktime (hr, min, sec, month, day, yr)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strftime (forma­tst­ring, timestamp)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>strtotime (str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>time ()<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width="2%" style='width:2.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <h3 id="title_2_9">PHP Regular Expressions Functions<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>ereg (pattern, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>split (pattern, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>ereg_r­eplace (pattern, replace, str)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>preg_grep (pattern, arr)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>preg_match (pattern, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>preg_m­atc­h_all (pattern, str, arr)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>preg_r­eplace (pattern, replace, str)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>preg_split (pattern, str)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_2_8">Regular Expressions Syntax<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>^<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Start of string<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>$<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>End of string<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>.<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any single character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>(a|b)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a or b<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>(...)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Group section<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[abc]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>In range (a, b or c)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[^abc]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Not in range<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>\s<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>White space<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or one of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a*?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or more, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a+<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>One or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a+?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>One or more, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Exactly 3 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{,6}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Up to 6 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,6}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 to 6 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:17'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,6}?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 to 6 of a, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:18'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>\<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Escape character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:19'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:punct:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any punctu­ation symbol<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:20'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:space:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any space character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:21;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:blank:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Space or tab<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=cheatsheetnote>There's an excellent regular expression tester at: <a
+  href="http://regexpal.com/" target="_blank">http:/­/re­gex­pal.com/</a><o:p></o:p></p>
+  <h3 id="title_2_10">Pattern Modifiers<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>g<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Global match<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>i&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Case-i­nse­nsitive<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>m&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Multiple lines<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>s&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Treat string as single line<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>x&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Allow comments and whitespace in pattern<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>e&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Evaluate replac­ement<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>U&nbsp;*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Ungreedy pattern<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=cheatsheetnote>* PCRE modifier</p>
+  </td>
+  <td width="2%" style='width:2.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <h3 id="title_2_7">PHP fopen() Modes<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>r<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Read<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>r+<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Read and write, prepend<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>w<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Write, truncate<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>w+<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Read and write, truncate<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Write, append<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a+<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Read and write, append<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_2_12">PHP Date Formatting<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Y<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>4 digit year (2008)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>y<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>2 digit year (08)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>F<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Long month (January)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>M<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Short month (Jan)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>m<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Month <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (01 to 12)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>n<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Month (1 to 12)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>D<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Short day name (Mon)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>l<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Long day name (Monday) (lowercase L)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>d<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Day <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (01 to 31)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>j<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Day (1 to 31)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>h<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>12 Hour <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (01 to 12)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>g<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>12 Hour (1 to 12)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>H<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>24 Hour <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (00 to 23)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>G<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>24 Hour (0 to 23)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>i<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Minutes <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (00 to 59)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>s<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Seconds <span style='font-family:"Cambria Math","serif"'>⁴</span>
+    (00 to 59)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:17'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:18'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>w<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Day of week ¹ (0 to 6)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:19'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>z<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Day of year (0 to 365)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:20'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>W<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Week of year ² (1 to 53)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:21'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>t<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Days in month (28 to 31)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:22'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:23'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>am or pm<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:24'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>A<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>AM or PM<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:25'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>B<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Swatch Internet Time (000 to 999)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:26'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>S<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Ordinal Suffix (st, nd, rd, th)<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:27'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:28'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>T<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Timezone of machine (GMT)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:29'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Z<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Timezone offset (seconds)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:30'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>O<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>GMT offset (hours) (+0200)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:31'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>I<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Daylight saving (1 or 0)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:32'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>L<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Leap year (1 or 0)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:33'>
+    <td colspan=2 valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:34'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>U<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Seconds since Epoch ³<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:35'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>c<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>ISO 8601 (PHP 5) (2008-­07-­31T­18:­30:­13+­01:00)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:36;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>r<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>RFC 2822 (Thu, 31 Jul 2008 18:30:13 +0100)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=cheatsheetnote>¹ 0 is Sunday, 6 is Saturday.<br>
+  ² Week that overlaps two years belongs to year that contains most days of
+  that week. Hence week number for 1st January of a given year can be 53 if
+  week belongs to previous year. date(&quot;W­&quot;, mktime(0, 0, 0, 12, 8,
+  $year)) always gives correct number of weeks in $year.<br>
+  ³ The Epoch is the 1st January 1970.<br>
+  <span style='font-family:"Cambria Math","serif"'>⁴</span> With leading zeroes</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  page-break-inside:avoid'>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <h3>mod_rewrite Tutorials<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><a href="http://httpd.apache.org/docs/current/rewrite/"
+    target="_blank">http:/­/ht­tpd.ap­ach­e.o­rg/­doc­s/c­urr­ent­/re­write/</a><span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><a
+    href="http://www.addedbytes.com/for-beginners/url-rewriting-for-beginners/"
+    target="_blank">http:/­/ww­w.a­dde­dby­tes.co­m/f­or-­beg­inn­ers­/ur­l-r­ewr­iti­ng-­for­-be­gin­ners/</a><span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal><a
+    href="http://net.tutsplus.com/tutorials/other/a-deeper-look-at-mod_rewrite-for-apache/"
+    target="_blank">http:/­/ne­t.t­uts­plu­s.c­om/­tut­ori­als­/ot­her­/a-­dee­per­-lo­ok-­at-­mod­_re­wri­te-­for­-ap­ache/</a><span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_4_15">mod_rewrite RewriteRule Flags<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>C<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Chained with next rule<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>CO=cookie<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Set specified cookie<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>E=var:­value<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Set enviro­nmental variable “var” to “value”<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>F<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Forbidden (403 header)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>G<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Gone - no longer exists<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>H=handler<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Set handler<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>L<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Last - stop processing rules<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>N<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Next - continue processing<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>NC<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Case insens­itive<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>NE<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Do not escape output<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>NS<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Ignore if subrequest<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>P<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Proxy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>PT<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Pass through<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>R[=code]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Redirect to new URL, with optional code (see below)<span
+    style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>QSA<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Append query string<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>S=x<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Skip next x rules<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>T=mime­-type<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Set mime type<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_4_93">mod_rewrite RewriteCond Flags<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>NC<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Case insens­itive<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>OR<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Combine with next rule using 'OR' instead of the default
+    of 'AND'<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_4_94">Redirection Header Codes<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>301<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Moved perman­ently<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>302<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Moved tempor­arily (default)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_4_91">mod_rewrite Directives<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eEngine<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eOp­tions<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>RewriteLog<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eLo­gLevel<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eLock<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>RewriteMap<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eBase<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eCond<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Rewrit­eRule<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width="2%" style='width:2.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width="32%" valign=top style='width:32.0%;padding:0in 0in 0in 0in'>
+  <h3 id="title_4_8">Regular Expressions Syntax<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>^<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Start of string<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>$<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>End of string<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>.<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any single character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>(a|b)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a or b<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>(...)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Group section<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[abc]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>In range (a, b or c)<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[^abc]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Not in range<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>\s<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>White space<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or one of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a*<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a*?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Zero or more, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a+<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>One or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a+?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>One or more, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Exactly 3 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 or more of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{,6}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Up to 6 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,6}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 to 6 of a<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:17'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>a{3,6}?<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>3 to 6 of a, ungreedy<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:18'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>\<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Escape character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:19'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:punct:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any punctu­ation symbol<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:20'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:space:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Any space character<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:21;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>[:blank:]<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>Space or tab<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=cheatsheetnote>There's an excellent regular expression tester at: <a
+  href="http://regexpal.com/" target="_blank">http:/­/re­gex­pal.com/</a><o:p></o:p></p>
+  <h3 id="title_4_89">mod_rewrite Server Variables: HTTP Headers<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_US­ER_­AGENT}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_RE­FERER}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_CO­OKIE}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_FO­RWA­RDED}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_HOST}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_PR­OXY­_CO­NNE­CTION}<span style='font-size:
+    12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{HTTP­_AC­CEPT}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <h3 id="title_4_88">mod_rewrite Server Variables: Server Internals<o:p></o:p></h3>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'
+   id="cheat_sheet_output_table">
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{DOCU­MEN­T_ROOT}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­ADMIN}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­NAME}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­ADDR}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­PORT}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­PRO­TOCOL}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>%{SERV­ER_­SOF­TWARE}<span style='font-size:12.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td width="2%" style='width:2.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;<span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
