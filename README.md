@@ -1,13 +1,4 @@
 
-
-From:                                         Toshmatov, Jon H
-
-Sent:                                           Wednesday, December 11, 2013 2:00 PM
-
-Importance:                            High
-
- 
-
 MySQL Data Types
 
 CHAR
